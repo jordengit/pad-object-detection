@@ -11,8 +11,10 @@ for you to regenerate them or train your own.
 Here are some screenshots of the first model I trained overnight that included 
 17 different object classes.
 
-![phone picture with annotations](docs/phone_trained.png)
-![screenshot with annotations](docs/screen_trained.png)
+<div align="center">
+ <img src="https://raw.githubusercontent.com/nachoapps/pad-object-detection/master/docs/phone_trained.png" width="50%">
+ <img src="https://raw.githubusercontent.com/nachoapps/pad-object-detection/master/docs/screen_trained.png" width="50%">
+</div>
 
 If you just want to play with the frozen models, I've created a couple here:
 TODO: link to models
