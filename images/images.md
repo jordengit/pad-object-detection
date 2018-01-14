@@ -1,3 +1,5 @@
+This folder is intentionally empty.
+
 You can download the files that go in this folder from Google Drive:
 https://drive.google.com/open?id=1kk46jpebpeBFkYX18iD8D6eP8WKE_wFz
 
