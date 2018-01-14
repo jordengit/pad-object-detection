@@ -12,8 +12,8 @@ Here are some screenshots of the first model I trained overnight that included
 17 different object classes.
 
 <div align="center">
- <img src="https://raw.githubusercontent.com/nachoapps/pad-object-detection/master/docs/phone_trained.png" width="50%">
- <img src="https://raw.githubusercontent.com/nachoapps/pad-object-detection/master/docs/screen_trained.png" width="50%">
+ <img src="https://raw.githubusercontent.com/nachoapps/pad-object-detection/master/docs/phone_trained.png" height="600px">
+ <img src="https://raw.githubusercontent.com/nachoapps/pad-object-detection/master/docs/screen_trained.png" height="600px">
 </div>
 
 If you just want to play with the frozen models, I've created a couple here:
