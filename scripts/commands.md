@@ -74,7 +74,7 @@ TF_RESEARCH=/path/to/tensorflow/models/research
 
 python $TF_RESEARCH/object_detection/eval.py \
 --logtostderr \
---pipeline_config_path=training/model_configs/configured/ssd_inception_v2_coco.config \
+--pipeline_config_path=model_configs/configured/ssd_inception_v2_coco.config \
 --checkpoint_dir=training/checkpoints/ssd_inception \
 --eval_dir=training/checkpoints/ssd_inception
 
