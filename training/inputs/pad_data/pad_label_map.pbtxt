@@ -1,0 +1,84 @@
+item {
+  id: 1
+  name: '5x4board'
+}
+
+item {
+  id: 2
+  name: '6x5board'
+}
+
+item {
+  id: 3
+  name: '7x6board'
+}
+
+item {
+  id: 4
+  name: 'board'
+}
+
+item {
+  id: 5
+  name: 'rorb'
+}
+
+item {
+  id: 6
+  name: 'borb'
+}
+
+item {
+  id: 7
+  name: 'gorb'
+}
+
+item {
+  id: 8
+  name: 'lorb'
+}
+
+item {
+  id: 9
+  name: 'dorb'
+}
+
+item {
+  id: 10
+  name: 'jorb'
+}
+
+item {
+  id: 11
+  name: 'porb'
+}
+
+item {
+  id: 12
+  name: 'morb'
+}
+
+item {
+  id: 13
+  name: 'lock'
+}
+
+item {
+  id: 14
+  name: 'plus'
+}
+
+item {
+  id: 15
+  name: 'portrait'
+}
+
+item {
+  id: 16
+  name: 'horb'
+}
+
+item {
+  id: 17
+  name: 'oorb'
+}
