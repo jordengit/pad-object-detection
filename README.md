@@ -16,8 +16,9 @@ Here are some screenshots of the first model I trained overnight that included
  <img src="https://raw.githubusercontent.com/nachoapps/pad-object-detection/master/docs/screen_trained.png" height="600px">
 </div>
 
-If you just want to play with the frozen models, I've created a couple here:
-TODO: link to models
+If you just want to play with the frozen models, I'll put a couple here:
+https://drive.google.com/drive/folders/1RIZaDYEB6HbYv9iDP4EYLsozQl6blSVF
+
 
 ### Why use ML
 
@@ -62,6 +63,9 @@ I want to use this eventually for my mechanical PAD solver.
 The images are kind of large because I didn't think to scale them down before
 annotating, oops. The tfrecord conversion script applies a scaling before
 saving the records.
+
+You can download them here:
+https://drive.google.com/open?id=1kk46jpebpeBFkYX18iD8D6eP8WKE_wFz
 
 ## Labeling Images
 
