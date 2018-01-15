@@ -16,8 +16,8 @@ Here are some screenshots of the first model I trained overnight that included
  <img src="https://raw.githubusercontent.com/nachoapps/pad-object-detection/master/docs/screen_trained.png" height="600px">
 </div>
 
-If you just want to play with the frozen models, I'll put a couple here:
-https://drive.google.com/drive/folders/1RIZaDYEB6HbYv9iDP4EYLsozQl6blSVF
+If you just want to play with the frozen models, I'll put a couple
+[here](https://drive.google.com/drive/folders/1RIZaDYEB6HbYv9iDP4EYLsozQl6blSVF).
 
 
 ### Why use ML
@@ -40,8 +40,8 @@ fails; adding additional examples can make existing matches worse.
 Also, you can't just find arbitrary things in the image, you have to figure
 out an identification technique for each of them.
 
-This approach uses box annotations and the Tensorflow [Object Detection]
-(https://github.com/tensorflow/models/tree/master/research/object_detection)
+This approach uses box annotations and the Tensorflow
+[Object Detection](https://github.com/tensorflow/models/tree/master/research/object_detection)
 library to try to pick out items in the image.
 
 The main disadvantages are the effort required to box everything you want to
@@ -64,8 +64,9 @@ The images are kind of large because I didn't think to scale them down before
 annotating, oops. The tfrecord conversion script applies a scaling before
 saving the records.
 
-You can download them here:
-https://drive.google.com/open?id=1kk46jpebpeBFkYX18iD8D6eP8WKE_wFz
+You can download them
+[here](https://drive.google.com/open?id=1kk46jpebpeBFkYX18iD8D6eP8WKE_wFz).
+Stick them in the [images](images/images.md) directory.
 
 ## Labeling Images
 
@@ -118,7 +119,7 @@ https://www.tensorflow.org/install/install_linux
 For Tensorflow 1.4 be sure to install CUDA v8 and cuDNN v6 EXACTLY. Trying to
 mix and match is like asking to suffer. 
 
-# Set up tensorflow/models object_detection
+# Set up tensorflow/models/object_detection
 
 Follow the instructions here:
 https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/installation.md
