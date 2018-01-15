@@ -126,4 +126,6 @@ https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc
 
 # Get started
 
-Check out the [commands](scripts/commands.md] I've provided. 
+Check out the [commands](scripts/commands.md) I've provided. These allow you to
+generate the training data, train the model, run evaluation, export a frozen
+model, and run inference on an arbitrary image.
