@@ -66,6 +66,7 @@ FLAGS = flags.FLAGS
 
 RANDOM_SEED = 4242
 VALIDATION_PCT = .1
+MAX_IMG_DIM = 1024.0
 
 
 def dict_to_tf_example(data,
@@ -102,14 +103,17 @@ def dict_to_tf_example(data,
         raise ValueError('Image format not JPEG/PNG')
     key = hashlib.sha256(encoded_image).hexdigest()
 
-    MAX_IMG_DIM = 640
-    max_dim = max(image.size[0], image.size[1])
-
+    max_dim = float(max(image.size[0], image.size[1]))
     if max_dim > MAX_IMG_DIM:
-        scale_factor = 1 - (max_dim - MAX_IMG_DIM) / max_dim
-        new_width = int(image.size[0] * scale_factor)
-        new_height = int(image.size[1] * scale_factor)
-        image = image.resize((new_width, new_height), PIL.Image.ANTIALIAS)
+        scale_factor = 1.0 - (max_dim - MAX_IMG_DIM) / max_dim
+        if image.size[0] > image.size[1]:
+            new_width = MAX_IMG_DIM
+            new_height = image.size[1] * scale_factor
+        else:
+            new_width = image.size[0] * scale_factor
+            new_height = MAX_IMG_DIM
+
+        image = image.resize((int(new_width), int(new_height)), PIL.Image.ANTIALIAS)
         encoded_image_io = io.BytesIO()
         image.save(encoded_image_io, image_format)
         encoded_image = encoded_image_io.getvalue()
@@ -132,13 +136,13 @@ def dict_to_tf_example(data,
             if ignore_difficult_instances and difficult:
                 continue
 
-            difficult_obj.append(int(difficult))
-
             class_text = obj['name']
             if class_text not in label_map_dict:
                 # We're not interested in outputting this class
                 continue
             class_value = label_map_dict[class_text]
+
+            difficult_obj.append(int(difficult))
 
             xmin.append(float(obj['bndbox']['xmin']) / width)
             ymin.append(float(obj['bndbox']['ymin']) / height)
