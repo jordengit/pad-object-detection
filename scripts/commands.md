@@ -99,3 +99,33 @@ python $TF_RESEARCH/object_detection/export_inference_graph.py \
 ```
 
 ## Running the resulting graph on some images
+
+
+## Other notes
+
+### GPU OOM
+
+If you want to run training and eval simultaneously, but your GPU memory keeps
+getting exhausted, set this in your eval console to force it onto the CPU
+instead:
+
+```
+export CUDA_VISIBLE_DEVICES=-1
+```
+
+### Visualization limits
+
+By default only 20 boxes are drawn, so your eval images in tensorboard might
+look like they're not performing well.
+
+You can update evaluator.py:174 to print more detections like so:
+
+```
+eval_util.visualize_detection_results(
+   <snip other stuff leave it alone>
+    show_groundtruth=eval_config.visualization_export_dir,
+    max_num_predictions=100)
+```
+
+If you're using the jupyter notebook `object_detection_ssd_inception.ipynb`
+remember to do the same thing.
