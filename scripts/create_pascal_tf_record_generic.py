@@ -54,12 +54,11 @@ import tensorflow as tf
 
 flags = tf.app.flags
 flags.DEFINE_string('data_dir', 'images',
-                    '(Relative) path to images directory.')
+                    '(Relative) path to images directory')
 flags.DEFINE_string('annotations_dir', 'annotations',
-                    '(Relative) path to annotations directory.')
+                    '(Relative) path to annotations directory')
 flags.DEFINE_string('output_path', '', 'Path to output TFRecord')
-flags.DEFINE_string('label_map_path', 'data/pascal_label_map.pbtxt',
-                    'Path to label map proto')
+flags.DEFINE_string('label_map_path', '', 'Path to label map proto')
 flags.DEFINE_boolean('ignore_difficult_instances', False, 'Whether to ignore '
                      'difficult instances')
 FLAGS = flags.FLAGS
