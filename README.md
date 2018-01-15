@@ -123,3 +123,7 @@ mix and match is like asking to suffer.
 
 Follow the instructions here:
 https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/installation.md
+
+# Get started
+
+Check out the [commands](scripts/commands.md] I've provided. 
