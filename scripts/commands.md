@@ -1,5 +1,7 @@
 # Execute these commands to get started
 
+Make sure your PYTHONPATH is configured per the object_detection docs (should
+include tensorflow/research tensorflow/research/slim).
 
 ## Creating model/validation records
 
@@ -85,7 +87,7 @@ tensorboard --logdir=training/checkpoints/ssd_inception
 
 ## Exporting the frozen graph
 
-Replace '17822' in the command below with the latest checkpoint you
+Replace '12030' in the command below with the latest checkpoint you
 generated.
 
 ```
@@ -94,7 +96,7 @@ TF_RESEARCH=/path/to/tensorflow/models/research
 python $TF_RESEARCH/object_detection/export_inference_graph.py \
 --input_type image_tensor \
 --pipeline_config_path=model_configs/configured/ssd_inception_v2_coco.config \
---train_dir=training/checkpoints/ssd_inception/model.ckpt-17822 \
+--trained_checkpoint_prefix=training/checkpoints/ssd_inception/model.ckpt-12030 \
 --output_directory=training/exported/ssd_inception
 ```
 
