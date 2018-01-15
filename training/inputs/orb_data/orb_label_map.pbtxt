@@ -53,3 +53,8 @@ item {
   id: 11
   name: 'oorb'
 }
+
+item {
+  id: 12
+  name: 'portrait'
+}
