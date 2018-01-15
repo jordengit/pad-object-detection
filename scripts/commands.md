@@ -102,6 +102,14 @@ python $TF_RESEARCH/object_detection/export_inference_graph.py \
 
 ## Running the resulting graph on some images
 
+This will pop up an annotated image and also print some stats to the terminal.
+
+```
+python scripts/run_inference.py \
+--model_checkpoint=training/exported/ssd_inception/frozen_inference_graph.pb \ 
+--label_map_path=training/inputs/orb_data/orb_label_map.pbtxt \
+--input_image_path=images/bombs_2.png
+```
 
 ## Other notes
 
@@ -130,4 +138,4 @@ eval_util.visualize_detection_results(
 ```
 
 If you're using the jupyter notebook `object_detection_ssd_inception.ipynb`
-remember to do the same thing.
+remember to do the same thing using `max_boxes_to_draw=100`.
