@@ -1,5 +1,7 @@
 <annotation>
+	<folder>images</folder>
 	<filename>bombs_2.png</filename>
+	<path>/media/steve/BC62269F62265F00/Users/steve/git/pad-object-detection/images/bombs_2.png</path>
 	<source>
 		<database>Unknown</database>
 	</source>
@@ -63,10 +65,10 @@
 		<truncated>0</truncated>
 		<difficult>0</difficult>
 		<bndbox>
-			<xmin>247</xmin>
-			<ymin>709</ymin>
-			<xmax>372</xmax>
-			<ymax>843</ymax>
+			<xmin>252</xmin>
+			<ymin>715</ymin>
+			<xmax>374</xmax>
+			<ymax>842</ymax>
 		</bndbox>
 	</object>
 	<object>
