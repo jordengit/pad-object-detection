@@ -8,8 +8,8 @@ items on screen in Puzzle and Dragons.
 It works pretty well. I'm providing a few example models I built, and scripts
 for you to regenerate them or train your own. 
 
-Here are some screenshots of the first model I trained overnight that included 
-17 different object classes.
+Here are some screenshots of the faster_rcnn model after about two hours of
+training.
 
 <div align="center">
  <img src="https://raw.githubusercontent.com/nachoapps/pad-object-detection/master/docs/phone_trained.png" height="600px">
